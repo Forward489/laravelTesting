@@ -8,6 +8,15 @@ use App\Models\User;
 
 class LoginController extends Controller
 {
+    /* 
+        Jangan lupa nanti sebelum mau testing, run command ini di terminal + pastikan database nama databasenya sama dengan yang ada di .env (laravel).
+
+        php artisan migrate:fresh
+
+        run itu ya commandnya, good luck dri.
+    */
+
+
     //Melakukan return view login
     public function login() {
         return view('login');
